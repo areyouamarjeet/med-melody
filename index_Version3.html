@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med Melody - Participant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login View -->
+        <div id="login-view" class="view active">
+            <h1>Med Melody</h1>
+            <p>Cerebrexia '25</p>
+            <input type="text" id="team-name" placeholder="Enter Team Name" required>
+            <button id="start-btn">Join Quiz</button>
+        </div>
+
+        <!-- Quiz View -->
+        <div id="quiz-view" class="view">
+            <h2 id="question-title">Song 1 Syndrome</h2>
+            <div class="timer-box">Time Left: <span id="timer">60</span>s</div>
+            <textarea id="answer-box" placeholder="Guess the syndrome..."></textarea>
+            <br>
+            <button id="submit-btn">Submit Answer</button>
+            <p id="status-msg"></p>
+        </div>
+
+        <!-- End View -->
+        <div id="end-view" class="view">
+            <h1>Quiz Completed!</h1>
+            <p>Thanks for participating.</p>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

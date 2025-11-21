@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Host Dashboard - Med Melody</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Extra styles for the dashboard table */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #007bff; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        #live-feed { max-width: 800px; margin: 0 auto; }
+    </style>
+</head>
+<body>
+    <div id="live-feed">
+        <h1>Live Submissions</h1>
+        <button onclick="downloadCSV()">Download All Results</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Song #</th>
+                    <th>Team Name</th>
+                    <th>Answer</th>
+                    <th>Time (UTC)</th>
+                </tr>
+            </thead>
+            <tbody id="submissions-table">
+                <!-- Rows will appear here automatically -->
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="host.js"></script>
+</body>
+</html>
